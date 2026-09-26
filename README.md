@@ -8,6 +8,21 @@ contain; press Start.
 
 ---
 
+## On Windows
+
+Double-click **`SETUP.bat`**. It installs everything, builds the app, and puts a
+shortcut on your Desktop.
+
+| Script | What it does |
+|---|---|
+| `SETUP.bat` | Sets everything up, start to finish |
+| `DEMO.bat` | Opens the app with example data, no LinkedIn |
+| `CHECK.bat` | Reports what is set up, and saves a report to send for help |
+
+`START-HERE.md` is the step-by-step version, `INSTALL-WINDOWS.md` covers the
+awkward cases.
+
+
 ## Getting started on Windows
 
 **If someone gave you the built application**, open the `LinkedInEnricher` folder

@@ -1,5 +1,19 @@
 # Start here
 
+## The short way
+
+**Double-click `SETUP.bat`.** It finds or installs Python, sets everything up,
+builds the app, and puts a shortcut on your Desktop. 10–20 minutes, mostly
+downloading. Then double-click `DEMO.bat` to try it with example data and no
+LinkedIn account.
+
+If anything looks wrong, `CHECK.bat` reports what is and is not set up.
+
+Everything below explains the same thing step by step, and what to do when a
+step misbehaves.
+
+---
+
 A walkthrough, in order. Steps 1–4 do not touch LinkedIn at all, so you can get
 the whole thing working before you risk anything with your account.
 
