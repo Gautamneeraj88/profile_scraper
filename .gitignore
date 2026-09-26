@@ -1,0 +1,80 @@
+# ---------------------------------------------------------------------------
+# Never commit these.  This repository is public.
+# ---------------------------------------------------------------------------
+
+# A live LinkedIn session.  Anyone with either of these can use the account:
+# .chrome-profile/ is a signed-in Chrome profile, cookies included, and is 92 MB.
+storage_state.json
+*.storage_state.json
+.chrome-profile/
+chrome-profile/
+*.chrome-profile/
+
+# Real people.  Scraped profiles and candidate lists are personal data and do
+# not belong in a public repository.  The test corpus lives in out/ and is
+# shared privately instead; tests_engine.py skips those groups when it is
+# absent, so a fresh clone still builds.
+out/
+*_enriched.csv
+*_enriched.xlsx
+_input_sheet.csv
+sheet.csv
+candidates*.csv
+candidates*.xlsx
+
+# Run history: names, URLs, sometimes the account being used.
+*.log
+logs/
+
+# Local settings, which contain the LinkedIn email.
+config.json
+
+# ---------------------------------------------------------------------------
+# Build output and environments
+# ---------------------------------------------------------------------------
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+build/
+dist/
+*.spec.bak
+*.egg-info/
+
+# Playwright's browser download
+ms-playwright/
+
+# ---------------------------------------------------------------------------
+# Development scratch, kept locally
+# ---------------------------------------------------------------------------
+debug_*.py
+p1.html
+bin/
+*.bak
+
+# The first-generation scripts.  Superseded by li_engine.py, imported by
+# nothing that ships, and sheet_login.py has a private sheet ID hardcoded in
+# it.  Kept on disk, out of the repository.
+common.py
+login.py
+parse.py
+scrape.py
+search.py
+settle.py
+sheet_login.py
+push_sheet.py
+extract.js
+detail_extract.js
+search_extract.js
+
+# The bundle sent to colleagues.  It contains out/, so publishing it would
+# republish the profile corpus.  Rebuild it locally when needed.
+LinkedInEnricher-source.zip
+
+# ---------------------------------------------------------------------------
+# OS noise
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
